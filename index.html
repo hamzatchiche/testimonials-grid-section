@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [testimonials-Grid-section]</title>
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- font awesome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[var(--Grey100)]">
+    <section
+      class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4 p-8 max-w-6xl mx-auto"
+    >
+      <div
+        class="card1 col-span-2 row-span-1 shadow-lg rounded-md p-6 mb-0 font-semibold bg-[var(--Purple500)] bg-[url(/images/bg-pattern-quotation.svg)] bg-[position:21rem_top] bg-no-repeat"
+      >
+        <div
+          class="header text-[var(--Grey200)] text-sm flex items-center space-x-4 mb-4"
+        >
+          <img
+            src="images/image-daniel.jpg"
+            alt="daiel image"
+            class="img rounded-full border-2 border-[var(--Purple300)] float-left w-8"
+          />
+          <div class="ml-12">
+            <h2 class="font-semibold">Daniel Clifford</h2>
+            <h4 class="text-xs font-light">Verified Graduate</h4>
+          </div>
+        </div>
+        <h3
+          class="text-[var(--White)] pt-2 font-semibold mb-2 text-lg leading-tight"
+        >
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </h3>
+        <p
+          class="text-[var(--Grey200)] text-xs pr-2 font-light leading-relaxed"
+        >
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best - and most grueling - time of my life. Since
+          completing the course, I’ve successfully switched careers, working as
+          a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+      <div
+        class="card2 col-span-2 md:col-span-1 rounded-md md:row-span-1 p-6 bg-[var(--Grey500)]"
+      >
+        <div
+          class="header text-[var(--Grey200)] text-sm flex items-center space-x-4 mb-4"
+        >
+          <img
+            src="images/image-jonathan.jpg"
+            alt="jonathan image"
+            class="img rounded-full border-2 border-[var(--Purple500)] float-left w-8"
+          />
+          <div class="ml-12">
+            <h2 class="font-semibold">Jonathan Walters</h2>
+            <h4 class="text-xs font-light">Verified Graduate</h4>
+          </div>
+        </div>
+        <h3
+          class="text-[var(--White)] pt-2 font-semibold mb-2 text-lg leading-tight"
+        >
+          The team was very supportive and kept me motivated
+        </h3>
+        <p
+          class="text-[var(--Grey200)] text-xs pr-2 font-light leading-relaxed"
+        >
+          “ I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I’ve made in myself. ”
+        </p>
+      </div>
+      <div
+        class="card3 col-span-2 rounded-md md:col-span-1 md:row-span-2 p-4 bg-[var(--White)]"
+      >
+        <div
+          class="header text-[var(--Grey500)] text-sm flex items-center space-x-4 mb-4"
+        >
+          <img
+            src="images/image-kira.jpg"
+            alt="kira image"
+            class="img rounded-full border-2 float-left w-8"
+          />
+          <div class="ml-12">
+            <h2 class="font-semibold">Kira Whittle</h2>
+            <h4 class="text-xs font-light">Verified Graduate</h4>
+          </div>
+        </div>
+        <h3
+          class="text-[var(--Grey500)] pt-2 font-semibold mb-2 text-lg leading-tight"
+        >
+          Such a life-changing experience. Highly recommended!
+        </h3>
+        <p
+          class="text-[var(--Grey400)] text-xs pr-2 font-light leading-relaxed"
+        >
+          “ Before joining the bootcamp, I’ve never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+
+      <div
+        class="card4 order-5 col-span-2 md:col-span-1 rounded-md p-4 bg-[var(--White)]"
+      >
+        <div
+          class="header text-[var(--Grey500)] text-sm flex items-center space-x-4"
+        >
+          <img
+            src="images/image-jeanette.jpg"
+            alt="jeanette image"
+            class="img rounded-full border-2 float-left w-8"
+          />
+          <div class="ml-12">
+            <h2 class="font-semibold">Jeanette Harmon</h2>
+            <h4 class="text-xs font-light">Verified Graduate</h4>
+          </div>
+        </div>
+        <h3
+          class="text-[var(--Grey400)] pt-2 font-semibold mb-2 text-lg leading-tight"
+        >
+          An overall wonderful and rewarding experience
+        </h3>
+        <p
+          class="text-[var(--Grey400)] text-xs pr-2 font-light leading-relaxed"
+        >
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
+      </div>
+      <div
+        class="card5 order-4 md:order-5 col-span-2 md:col-span-2 rounded-md px-9 pt-4 font-semibold bg-[var(--Darkblue)]"
+      >
+        <div class="header text-[var(--Grey200)] text-sm">
+          <img
+            src="images/image-daniel.jpg"
+            alt="daiel image"
+            class="img rounded-full border-2 border-[var(--Purple300)] float-left w-8"
+          />
+          <div class="ml-12">
+            <h2 class="font-semibold">Patrick Abrams</h2>
+            <h4 class="text-xs font-light">Verified Graduate</h4>
+          </div>
+        </div>
+        <h3
+          class="text-[var(--White)] pt-2 font-semibold mb-2 text-lg leading-tight"
+        >
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </h3>
+        <p
+          class="text-[var(--Grey200)] text-xs pr-2 font-light leading-relaxed"
+        >
+          “ The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people. ”
+        </p>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">hAMZA TCHICHE</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
